@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/overnilx/udptun"
 	"path/filepath"
 	"sync"
+
+	"github.com/gaemma/udptun"
 )
 
 func main() {

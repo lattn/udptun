@@ -5,4 +5,4 @@ import (
 	"os"
 )
 
-var logger = log.New(os.Stdout, "udp => ", log.Ldate | log.Ltime)
+var logger = log.New(os.Stdout, "udp => ", log.Ldate|log.Ltime)

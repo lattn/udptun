@@ -77,7 +77,7 @@ func (s *Server) allowAddr(addr *net.UDPAddr) bool {
 func (s *Server) forward(conn *net.UDPConn, remoteAddr *net.UDPAddr, request []byte) {
 	// 转发请求到目标地址
 	logger.Println("try to connect target service")
-	targetConn, err := net.DialTimeout("udp", s.config.TargetAddr, time.Second * 1)
+	targetConn, err := net.DialTimeout("udp", s.config.TargetAddr, time.Second*1)
 	if err != nil {
 		logger.Println("unable to connect target service with error:", err)
 		return
